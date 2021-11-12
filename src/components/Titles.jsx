@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Titles = (props) => {
     return (
         <>
-            <Title>
+            <Title style={{textAlign:props.styleText, alignItems:props.styleCenter}}>
                 <h3>{props.upTitle}</h3>
                 <h1>{props.title}</h1>
             </Title>

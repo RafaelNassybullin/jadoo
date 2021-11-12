@@ -2,8 +2,10 @@ import Navbar from "./components/Navbar";
 import {GlobalStyle} from "./assets/globalStyles";
 import Hero from "./components/Hero";
 import Categories from "./components/Category";
-// import TopSelingCards from "./components/TopSellingCard";
 import TopSelling from "./components/TopSelling";
+import Easy from "./components/Easy";
+import Sponsors from "./components/Sponsors";
+import Subscribe from "./components/Subscribe";
 
 function App() {
     return (
@@ -12,9 +14,13 @@ function App() {
             <Navbar/>
             <Hero/>
             <Categories/>
+            <TopSelling/>
+            <Easy/>
+            <Sponsors/>
 
-<TopSelling></TopSelling>
 
+
+            <Subscribe></Subscribe>
         </>
     );
 }

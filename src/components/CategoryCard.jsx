@@ -6,8 +6,8 @@ const CategoryCard = (props) => {
             <Image>
                 <img src={props.image} alt=""/>
             </Image>
-            <h3>Best Flights</h3>
-            <p>Engrossed listening. Park gate sell they west hard for the.</p>
+            <h3>{props.title}</h3>
+            <p>{props.paragraph}</p>
         </Wrapper>
     );
 };
@@ -19,24 +19,30 @@ const Wrapper = styled.div`
   width: 18.542vw;
   height: 21.806vw;
   background: white;
+  cursor: pointer;
   border-radius: 2.500vw;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding: 2.986vw ;
+  display: flex;
+  color: #5E6282;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.9vw;
   flex-direction: column;
   text-align: center;
   transition: 300ms ease-in-out;
-  &:hover{
-    box-shadow:  5px 5px 10px #d5d5d5,
-             -5px -5px 10px #ebebeb;
+  transition-property:box-shadow ;
+
+  &:hover {
+    box-shadow: 5px 5px 10px #d5d5d5,
+      -5px -5px 10px #ebebeb;
   }
-  
-h3{
-  
-}
-  p{
-    
+
+  h3 {
+    color: #252940;
+  }
+
+  p {
+line-height: 1.806vw;
+    width: 12.569vw;
   }
 `
 const Image = styled.div`
