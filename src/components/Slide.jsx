@@ -30,7 +30,7 @@ const SlideItem = styled.div`
   color: #5E6282;
   position: relative;
   box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.5);
--webkit-box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.5);
 
   h3 {
     font-size: 1.111vw;

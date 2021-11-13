@@ -69,7 +69,6 @@ const TitleWrap = styled.div`
 const Card = styled.div`
   width: 33.681vw;
   height: 31.875vw;
-  //background: pink;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;

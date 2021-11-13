@@ -18,7 +18,6 @@ const Testimonials = () => {
                         styleCenter='flex-start'/>
                 <div className="bulletss">
 
-
                 </div>
             </TitleWrapper>
             <SliderWrapper>

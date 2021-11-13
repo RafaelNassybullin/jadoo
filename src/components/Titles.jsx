@@ -13,7 +13,6 @@ const Titles = (props) => {
 
 export default Titles;
 
-
 const Title = styled.div`
 width: 100%;
 display:flex;

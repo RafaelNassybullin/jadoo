@@ -10,37 +10,40 @@ import Icons from "../assets/Icons/Icons";
 
 
 const categoryCardsData = [
-        {img: imag1 , title: 'Calculated Weather ' , paragraph:'Built Wicket longer admire do barton vanity itself do in it.' },
-        {img: imag2 , title: 'Best Flights' , paragraph:'Engrossed listening. Park gate sell they west hard for the.' },
-        {img: imag3 , title: 'Local Events' , paragraph:'Barton vanity itself do in it. Preferd to men it engrossed listening. ' },
-        {img: imag4 , title: 'Customization' , paragraph:'We deliver outsourcedaviation services for military' },
-    ]
+    {
+        img: imag1,
+        title: 'Calculated Weather ',
+        paragraph: 'Built Wicket longer admire do barton vanity itself do in it.'
+    },
+    {img: imag2, title: 'Best Flights', paragraph: 'Engrossed listening. Park gate sell they west hard for the.'},
+    {
+        img: imag3,
+        title: 'Local Events',
+        paragraph: 'Barton vanity itself do in it. Preferd to men it engrossed listening. '
+    },
+    {img: imag4, title: 'Customization', paragraph: 'We deliver outsourcedaviation services for military'},
+]
 
 const Categories = () => {
 
     return (
         <Section>
-
             <div className="plus-down">
                 <Icons plusDown/>
             </div>
-
-
-
             <Titles upTitle='CATEGORY' title='We Offer Best Services'/>
             <Wrap>
-                {categoryCardsData.map((item)=><CategoryCard image={item.img} title={item.title} paragraph={item.paragraph}/>)}
+                {categoryCardsData.map((item) => <CategoryCard image={item.img} title={item.title} paragraph={item.paragraph}/>)}
             </Wrap>
         </Section>
     );
 };
 
 export default Categories;
+
 const Section = styled.section`
   position: relative;
-  
-  
-  .plus-down{
+  .plus-down {
     position: absolute;
     top: 0;
     right: 4.028vw;

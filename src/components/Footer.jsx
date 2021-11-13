@@ -147,13 +147,11 @@ const Icons = styled.div`
     margin-right: 1.736vw;
 
     &:hover {
-              background: conic-gradient(#B8D2F1, #F289AA, #C68BF0, #D164DA, #C963E8, #BFC2E8, #FFC999, #BAD0F1);
-
+      background: conic-gradient(#B8D2F1, #F289AA, #C68BF0, #D164DA, #C963E8, #BFC2E8, #FFC999, #BAD0F1);
       svg {
         fill: white;
       }
     }
-
   }
 `
 const DownLoad = styled.div`

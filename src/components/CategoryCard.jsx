@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+
 const CategoryCard = (props) => {
     return (
         <Wrapper>
@@ -29,7 +30,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   text-align: center;
   transition: 300ms ease-in-out;
-  transition-property:box-shadow ;
+  transition-property: box-shadow;
 
   &:hover {
     box-shadow: 5px 5px 10px #d5d5d5,
@@ -41,7 +42,7 @@ const Wrapper = styled.div`
   }
 
   p {
-line-height: 1.806vw;
+    line-height: 1.806vw;
     width: 12.569vw;
   }
 `
@@ -49,10 +50,11 @@ const Image = styled.div`
   width: 6.597vw;
   height: 6.597vw;
   background: white;
-img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-  
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
 `
