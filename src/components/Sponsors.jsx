@@ -44,8 +44,8 @@ const Block = styled.div`
 
   &:hover {
     background: white;
-    box-shadow: 2px -1px 50px -2px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 2px -1px 50px -2px rgba(0, 0, 0, 0.5);
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
   }
   
 `
