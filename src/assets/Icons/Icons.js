@@ -1,5 +1,6 @@
 import React from 'react';
 import './icons.css'
+
 const Icons = (props) => {
     return (
         <>
@@ -32,7 +33,6 @@ const Icons = (props) => {
 };
 
 export default Icons;
-
 
 const icon = {
     appleApp: <svg height="2.431vw" viewBox="0 0 100 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -383,8 +383,6 @@ const icon = {
 <path d="M147.197 117.61H151.559V119.49H147.197V124.432H145.199V119.49H140.838V117.61H145.199V113.045H147.197V117.61Z" fill="#E5E5E5"/>
 <path d="M147.197 152.61H151.559V154.49H147.197V159.432H145.199V154.49H140.838V152.61H145.199V148.045H147.197V152.61Z" fill="#E5E5E5"/>
 </svg>
-
-
 }
 
 //0.972vw
