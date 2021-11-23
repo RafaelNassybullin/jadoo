@@ -15,19 +15,19 @@ const Subscribe = () => {
                             <svg height="1.250vw" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6"
                                       stroke="#39425D" strokeLinecap="round"/>
-                                <rect x="0.5" y="0.5" width="20" height="17" rx="4.5" stroke="#39425D"/>
+                                <rect x="0.5" y="0.5" width="1.389vw" rx="4.5" stroke="#39425D"/>
                             </svg>
                         </div>
                         <input type="text" placeholder='Your email'/>
                     </div>
                     <button>Subscribe</button>
                 </InputWrap>
-                 <div className="left-spiral">
-                <Icons leftSpiral/>
-            </div>
-            <div className="right-spiral">
-                <Icons rightSpiral/>
-            </div>
+                <div className="left-spiral">
+                    <Icons leftSpiral/>
+                </div>
+                <div className="right-spiral">
+                    <Icons rightSpiral/>
+                </div>
                 <div className="planeCircle">
                     <Icons planeCircle/>
                 </div>
@@ -44,33 +44,46 @@ export default Subscribe;
 const Section = styled.section`
   padding: 0 9.722vw;
   margin-bottom: 11.528vw;
-  
+  @media (max-width: 433px) {
+    padding: 0 3.722vw;
+  }
 `
 const Block = styled.div`
-  background: #F9F7FE;position: relative;
+  background: #F9F7FE;
+  position: relative;
   height: 28.264vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 8.958vw 1.389vw 1.389vw 1.389vw;
-  .left-spiral{
+  @media (max-width: 433px) {
+    height: 114.264vw;
+  }
+
+  .left-spiral {
     position: absolute;
     left: 0;
     bottom: 0;
     margin-left: 1.319vw;
   }
-  .right-spiral{
+
+  .right-spiral {
     position: absolute;
     right: -0.3vw;
     top: 0;
   }
-  .planeCircle{
+
+  .planeCircle {
     position: absolute;
-    right: -2.431vw;
-    top: -2.431vw;
+    right: -1.431vw;
+    top: -1.431vw;
+    @media (max-width: 433px) {
+        top: -3.431vw;
+    }
   }
-  .plus-up{
+
+  .plus-up {
     position: absolute;
     right: -6.3vw;
     bottom: -5vw;
@@ -78,6 +91,10 @@ const Block = styled.div`
 `
 const Title = styled.div`
   z-index: 3;
+  @media (max-width: 433px) {
+
+  }
+
   h1 {
     color: #5E6282;
     font-size: 2.292vw;
@@ -86,6 +103,11 @@ const Title = styled.div`
     line-height: 3.750vw;
     margin-bottom: 5.139vw;
     z-index: 3;
+    @media (max-width: 433px) {
+      font-size: 6.292vw;
+      width: 88.653vw;
+      line-height: unset;
+    }
   }
 `
 const InputWrap = styled.div`
@@ -93,6 +115,10 @@ const InputWrap = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 3;
+  @media (max-width: 433px) {
+    flex-direction: column;
+  }
+
   .input-wraper {
     height: 4.722vw;
     width: 29.236vw;
@@ -103,6 +129,11 @@ const InputWrap = styled.div`
     align-items: center;
     margin-right: 1.667vw;
     border-radius: 0.694vw;
+    @media (max-width: 433px) {
+      height: 15.722vw;
+      width: 86.236vw;
+      border-radius: 5.694vw;
+    }
 
     input {
       outline: none;
@@ -110,7 +141,10 @@ const InputWrap = styled.div`
       background: transparent;
       width: 20.278vw;
       font-size: 0.972vw;
-      
+      @media (max-width: 433px) {
+        width: 77.278vw;
+        font-size: 5.972vw;
+      }
     }
 
     .icon {
@@ -129,5 +163,12 @@ const InputWrap = styled.div`
     color: white;
     font-size: 1.181vw;
     font-weight: 600;
+    @media (max-width: 433px) {
+      width: 50.5vw;
+      height: 13.722vw;
+      border-radius: 4.694vw;
+      font-size: 6.181vw;
+      margin-top: 14vw;
+    }
   }
 `

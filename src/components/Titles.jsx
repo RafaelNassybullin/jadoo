@@ -22,8 +22,13 @@ justify-content:center;
   text-align: center;
   h3{
     color: #5E6282;
+    
     text-transform: capitalize;
     font-size: 1.250vw;
+    @media(max-width: 433px){
+        font-size: 5.25vw;
+        margin-bottom: 3vw;
+    }
   }
   h1{
     font-family: Volkhov-Regular, sans-serif;
@@ -31,5 +36,8 @@ justify-content:center;
     font-size: 3.472vw;
     text-transform: capitalize;
     margin-top: 1.042vw;
+    @media(max-width: 433px){
+        font-size: 9.472vw;
+    }
   }
 `

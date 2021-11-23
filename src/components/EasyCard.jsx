@@ -35,7 +35,7 @@ const EasyCardComponent = () => {
                             </span>
                             <p>24 people going</p>
                         </div>
-                        <div className="heart" onClick={()=>handle()}>
+                        <div className="heart" onClick={() => handle()}>
                             {toggle ? <Icons blueHeart/> : <Icons redHeart/>}
                         </div>
                     </div>
@@ -52,8 +52,15 @@ const EasyCardWrap = styled.div`
   border-radius: 1.806vw;
   padding: 1.736vw;
   background: white;
-  box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.833vw 1.667vw -0.833vw rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0.833vw 1.667vw -0.833vw rgba(0, 0, 0, 0.5);
+  @media (max-width: 433px) {
+    width: 81.694vw;
+    height: 95.778vw;
+    border-radius: 4.806vw;
+    padding: 2.736vw;
+    
+  }
 `
 
 const Image = styled.div`
@@ -61,6 +68,10 @@ const Image = styled.div`
   height: 11.181vw;
   border-radius: 1.667vw;
   overflow: hidden;
+  @media (max-width: 433px) {
+    border-radius: 3.667vw;
+    height: 41.181vw;
+  }
 
   img {
     width: 100%;
@@ -73,14 +84,26 @@ const Text = styled.div`
   width: 100%;
   height: 11.250vw;
   color: #84829A;
+  @media (max-width: 433px) {
+    height: 36.25vw;
+  }
 
   h3 {
     margin-bottom: 1vw;
     color: black;
+    @media (max-width: 433px) {
+      font-size: 6vw;
+    }
   }
 
   h4 {
     font-weight: 500;
+    @media (max-width: 433px) {
+      //font-size: 3vw;
+      
+            font-size: 4vw;
+
+    }
   }
 
   .icons {
@@ -88,9 +111,12 @@ const Text = styled.div`
     align-items: center;
     justify-content: flex-start;
     margin: 1.6vw 0;
-    .leaf{
-      width: 0.972vw;
+    @media (max-width: 433px) {
+      margin: 8.6vw 0;
     }
+
+   
+
     .icon {
       display: flex;
       align-items: center;
@@ -101,6 +127,11 @@ const Text = styled.div`
       border-radius: 50%;
       margin-right: 1.250vw;
       cursor: pointer;
+      @media (max-width: 433px) {
+        width: 9.5vw;
+        height: 9.5vw;
+        margin-right: 4.25vw;
+      }
 
     }
 
@@ -115,6 +146,10 @@ const Text = styled.div`
       width: 1.3vw;
       height: 1.3vw;
       cursor: pointer;
+      @media (max-width: 433px) {
+        width: 6.3vw;
+        height: 6.3vw;
+      }
     }
 
     .people-count {
@@ -125,6 +160,9 @@ const Text = styled.div`
       p {
         margin-left: 1.042vw;
         font-weight: 500;
+        @media (max-width: 433px) {
+          font-size: 4vw;
+        }
       }
     }
   }

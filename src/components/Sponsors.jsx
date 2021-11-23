@@ -11,8 +11,8 @@ const imageData = [axon, jetstar, expedia, qantas, alitalia]
 const Sponsors = () => {
     return (
         <Section>
-            {imageData.map((item) => (
-                <Block>
+            {imageData.map((item, key) => (
+                <Block key={key}>
                     <Image>
                         <img src={item} alt=""/>
                     </Image>
@@ -29,6 +29,11 @@ const Section = styled.section`
   align-items: center;
   justify-content: space-between;
   padding: 6.667vw 9.722vw;
+  
+  @media(max-width: 433px){
+      padding: 80vw 9.722vw 68.667vw 9.722vw;
+    flex-direction: column;
+  }
 
 `
 const Block = styled.div`
@@ -41,16 +46,28 @@ const Block = styled.div`
   justify-content: center;
   transition: 300ms ease-in-out;
   transition-property: box-shadow, background;
-
+  @media(max-width: 433px){
+      width: 52.736vw;
+    height: 16.972vw;
+    border-radius: 3.694vw;
+    margin-bottom: 13vw;
+    
+    background: white;
+    box-shadow:  1.389vw 1.389vw 4.167vw #bebebe,
+             -1.389vw -1.389vw 4.167vw #ffffff;
+  }
   &:hover {
     background: white;
-    box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+    box-shadow:  1.389vw 1.389vw 4.167vw #bebebe,
+             -1.389vw -1.389vw 4.167vw #ffffff;
   }
   
 `
 const Image = styled.div`
   width: 6.667vw;
+  @media(max-width: 433px){
+      width: 31.6vw;
+  }
 
   img {
     width: 100%;

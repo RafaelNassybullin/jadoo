@@ -33,7 +33,7 @@ const Categories = () => {
             </div>
             <Titles upTitle='CATEGORY' title='We Offer Best Services'/>
             <Wrap>
-                {categoryCardsData.map((item) => <CategoryCard image={item.img} title={item.title} paragraph={item.paragraph}/>)}
+                {categoryCardsData.map((item, index) => <CategoryCard key={index} image={item.img} title={item.title} paragraph={item.paragraph}/>)}
             </Wrap>
         </Section>
     );
@@ -43,6 +43,9 @@ export default Categories;
 
 const Section = styled.section`
   position: relative;
+  @media(max-width: 433px){
+      margin-top: 191vw;
+  }
   .plus-down {
     position: absolute;
     top: 0;
@@ -54,4 +57,8 @@ const Wrap = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 4.583vw 9.722vw;
+  @media(max-width: 433px){
+      flex-direction: column;
+  }
+  
 `

@@ -25,29 +25,53 @@ const SlideItem = styled.div`
   background: #ffffff;
   border-radius: 0.694vw;
   padding: 1.944vw 2.361vw;
-  margin: 2.361vw;
+  margin: 3vw;
   cursor:pointer;
   color: #5E6282;
   position: relative;
-  box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.5);
-
+  //background: blue;
+  box-shadow: 0 0.833vw 2.778vw -0.556vw rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 0.833vw 2.778vw -0.556vw rgba(0, 0, 0, 0.5);
+  @media(max-width: 433px){
+    width: 78vw;
+    height: 64vw;
+    margin: 9.3vw;
+    border-radius: 4.6vw;
+    padding: 7.944vw 5.361vw;
+    box-shadow:  1.389vw 1.389vw 4.167vw #bebebe,
+             -1.389vw -1.389vw 4.167vw #ffffff;
+  }
   h3 {
     font-size: 1.111vw;
     line-height: 2.222vw;
     font-weight: 500;
+    @media(max-width: 433px){
+        font-size: 4.9vw;
+    margin-bottom: 12vw;
+    line-height: unset;
+    }
   }
 
   h4 {
     font-size: 1.250vw;
     font-weight: 600;
     margin-top: 2.361vw;
+    @media(max-width: 433px){
+        font-size: 5.25vw;
+    font-weight: 600;
+    margin-top: 2.361vw;
+    }
   }
 
   h5 {
     font-size: 0.972vw;
     font-weight: 400;
     margin-top: 0.694vw;
+    @media(max-width: 433px){
+        font-size: 3.972vw;
+    font-weight: 400;
+    margin-top: 0.694vw;
+    }
   }
 `
 const Image = styled.div`
@@ -58,6 +82,12 @@ const Image = styled.div`
   top: -2.361vw;
   left: -2.361vw;
   overflow: hidden;
+  @media(max-width: 433px){
+      width: 13.722vw;
+    height: 13.722vw;
+    top: -6.361vw;
+    left: -6.361vw;
+  }
   img {
     width: 100%;
     height: 100%;

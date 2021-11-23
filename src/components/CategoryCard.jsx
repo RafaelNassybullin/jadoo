@@ -31,25 +31,46 @@ const Wrapper = styled.div`
   text-align: center;
   transition: 300ms ease-in-out;
   transition-property: box-shadow;
+  @media (max-width: 433px) {
+    width: 51.542vw;
+    height: 56.806vw;
+    
+    border-radius: 6.5vw;
+    margin: 11vw 0;
+   box-shadow: 0px 12px 46px 0px rgba(184, 184, 184, 0.5);
+-webkit-box-shadow: 0px 12px 46px 0px rgba(184, 184, 184, 0.5);
+  }
 
   &:hover {
-    box-shadow: 5px 5px 10px #d5d5d5,
-      -5px -5px 10px #ebebeb;
+    box-shadow: 0.347vw 0.347vw 0.694vw #d5d5d5,
+      -0.347vw -0.347vw 0.694vw #ebebeb;
   }
 
   h3 {
     color: #252940;
+    @media (max-width: 433px) {
+      font-size: 5vw;
+    }
   }
 
   p {
     line-height: 1.806vw;
     width: 12.569vw;
+    @media (max-width: 433px) {
+      width: 34.569vw;
+      line-height: unset;
+      font-size: 4vw;
+    }
   }
 `
 const Image = styled.div`
   width: 6.597vw;
   height: 6.597vw;
   background: white;
+  @media (max-width: 433px) {
+    width: 19.597vw;
+    height: 19.597vw;
+  }
 
   img {
     width: 100%;

@@ -1,7 +1,5 @@
 import {createGlobalStyle} from 'styled-components'
 
-
-
 export const GlobalStyle = createGlobalStyle`
 
   * {
@@ -12,21 +10,22 @@ export const GlobalStyle = createGlobalStyle`
 
   *::selection {
     background: #ecd3a540;
-    
   }
 
+  
+  
   body {
     font-size: 1.181vw;
     overflow-x: hidden;
     font-family: Roboto, sans-serif;
-
+    
   }
 
   .padding-9vw {
     padding: 9.722vw;
+    @media(max-width: 433px){
+        padding: 5.722vw;
+      
+    }
   }
-
-
-
-
 `

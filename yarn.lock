@@ -1551,6 +1551,11 @@
     "estree-walker" "^1.0.1"
     "picomatch" "^2.2.2"
 
+"@rooks/use-window-size@^4.11.2":
+  "integrity" "sha512-TQvObjwn/oNUBO00dZeLaJC61BoonJmXV6Mye4hno25nnZASbBufvivTzuYJiYoAo0ciBrADaUNdrekGEs0ItA=="
+  "resolved" "https://registry.npmjs.org/@rooks/use-window-size/-/use-window-size-4.11.2.tgz"
+  "version" "4.11.2"
+
 "@sinonjs/commons@^1.7.0":
   "integrity" "sha512-sruwd86RJHdsVf/AtBoijDmUqJp3B6hF/DGC23C+JaegnDHaZyewCjoVGTdg3J0uz3Zs7NnIT05OBOmML72lQw=="
   "resolved" "https://registry.npmjs.org/@sinonjs/commons/-/commons-1.8.2.tgz"
@@ -9423,7 +9428,7 @@
   optionalDependencies:
     "fsevents" "^2.1.3"
 
-"react@*", "react@^17.0.2", "react@>= 16", "react@>= 16.8.0", "react@17.0.2":
+"react@*", "react@^17.0.2", "react@>= 16", "react@>= 16.8.0", "react@>=16.8.0", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
